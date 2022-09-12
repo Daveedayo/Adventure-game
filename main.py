@@ -1,5 +1,5 @@
 name = input("Type in your name to get started: ")
-print("Welcome to my Adventure game,", name + ".")
+print("Welcome to this Adventure,", name + ".")
 
 play = input("You are on an unknown road. You can go left or right to find a route. Which way would you go? (Type right/left or Q to quit): ").lower()
 
@@ -29,8 +29,9 @@ elif play == "right":
         else:
             print("Not a valid response")
     elif play == "stay":
-        print()
+        print("You stayed for too long in the cold. You lost!")
     else:
         print("Not a valid option")
 else:
     print("Please enter a valid option")
+print("Thanks for trying this Adventure game,", name + ".")
